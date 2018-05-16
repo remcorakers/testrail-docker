@@ -1,8 +1,8 @@
-FROM ubuntu:trusty
+FROM ubuntu:14.04
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     php5 php5-cli php5-mysql php5-curl \
-    mysql-server \
+    mysql-server-5.6 \
     curl \
     unzip \
     && rm -rf /var/lib/apt/lists/*
